@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator - How Old Am I?</title>
+    <meta
+      name="description"
+      content="Age Calculator is a simple tool to calculate your age, how old you are, in years, months, days."
+    />
+    <link href="style.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="app">
+        <div class="inputs">
+          <div class="day">
+            <span>DAY</span>
+            <input type="text" placeholder="DD" id="birth-day" maxlength="2" />
+          </div>
+          <div class="month">
+            <span>MONTH</span>
+            <input
+              type="text"
+              placeholder="MM"
+              id="birth-month"
+              maxlength="2"
+            />
+          </div>
+          <div class="year">
+            <span>YEAR</span>
+            <input type="text" placeholder="YYYY" id="birth-year" max="4" />
+          </div>
+        </div>
+        <span id="error" style="color: red"></span>
+        <!-- BUTTON TO START -->
+        <div class="pos-rel btn-wrapper">
+          <hr />
+          <div class="btn">
+            <img src="icon-arrow.svg" alt="" id="btn" />
+          </div>
+        </div>
+        <!--// BUTTON TO START //-->
+        <div class="outputs">
+          <div class="years-container date">
+            <div id="years">--</div>
+            <p>years</p>
+          </div>
+          <div class="month-container date">
+            <div id="months">--</div>
+            <p>months</p>
+          </div>
+          <div class="days-container date">
+            <div id="days">--</div>
+            <p>days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.min.js"></script>
+  </body>
+</html>
